@@ -1,9 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Books')
+@section('title', $book -> title)
+
 
 @section('content')
 <main>
-    <h1>Homepage</h1>
+    <h1>{{$book -> title}}</h1>
+
+
+
 </main>
 @endsection
